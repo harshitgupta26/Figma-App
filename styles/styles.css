@@ -1,118 +1,193 @@
 /* variables */
 :root {
-    --bg-light: #fefefe;
-    --bg-dark: #1f2d3d;
-    --bg-primary: #005daa;
-    --bg-secondary: #42c357;
-  }
-  
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    color: var(--bg-dark);
-  }
-  *,
-  body,
-  html {
-    box-sizing: border-box;
-  }
-  ul, li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* colors */
-  .t-color-dark {
-    color: var(--bg-dark);
-  }
-  
-  /* heading */
-  .t-h-xl {
-    font-weight: bold;
-    font-size: 77px;
-    line-height: 90px;
-    margin: 0;
-  }
-  .t-h1 {
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 66px;
-  }
-  .t-h2 {
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 49px;
-    margin: 0;
-  }
-  .t-h3 {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 42px;
-  }
-  .t-h4 {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 37px;
-  }
-  .t-h4-reg {
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 37px;
-  }
-  
-  /* paragraph */
-  .t-intro-text {
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 140%;
-  }
-  .t-intro-2 {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .t-intro-bold {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .t-para-bold {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-  }
-  
-  /* buttons */
-  .t-btn {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    padding: 14px 24px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-  .t-btn-primary {
-    background: var(--bg-primary);
-    color: var(--bg-light);
-  }
-  .t-btn-secondary {
-    background: var(--bg-secondary);
-    color: var(--bg-light);
-  }
-  .t-btn-outline-primary {
-    background: var(--bg-light);
-    border: 1px solid var(--bg-primary);
-    color: var(--bg-primary);
-  }
-  .t-btn-outline-secondary {
-    background: var(--bg-light);
-    border: 1px solid var(--bg-secondary);
-    color: var(--bg-secondary);
-  }
-  
+  --bg-light: #fefefe;
+  --bg-dark: #1f2d3d;
+  --bg-primary: #005daa;
+  --bg-secondary: #42c357;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--bg-dark);
+}
+*,
+body,
+html {
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* colors */
+.t-color-dark {
+  color: var(--bg-dark);
+}
+
+/* heading */
+.t-h-xl {
+  font-weight: bold;
+  font-size: 77px;
+  line-height: 90px;
+  margin: 0;
+}
+.t-h1 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 66px;
+}
+.t-h2 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  margin: 0;
+}
+.t-h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+.t-h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+}
+.t-h4-reg {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+/* paragraph */
+.t-intro {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #505671;
+}
+.t-intro-bold {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #505671;
+}
+.t-intro-2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333951;
+}
+.t-intro-2-bold {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333951;
+}
+.t-para {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+.t-para-bold {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+.t-tag {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #757C97;
+}
+.t-tag-semi {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #757C97;
+}
+.t-tag-sm {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757C97;
+}
+
+/* buttons */
+.t-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.t-btn-primary {
+  background: var(--bg-primary);
+  color: var(--bg-light);
+}
+.t-btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--bg-light);
+}
+.t-btn-outline-primary {
+  background: var(--bg-light);
+  border: 1px solid var(--bg-primary);
+  color: var(--bg-primary);
+}
+.t-btn-outline-secondary {
+  background: var(--bg-light);
+  border: 1px solid var(--bg-secondary);
+  color: var(--bg-secondary);
+}
+.t-btn-primary-tertiary {
+  background: none;
+  color: var(--bg-primary);
+}
+.t-btn-secondary-tertiary {
+  background: none;
+  color: var(--bg-secondary);
+}
+.t-btn-primary:hover {
+  background: #2987d5;
+  color: var(--bg-light);
+}
+.t-btn-secondary:hover {
+  background: #6cd37d;
+  color: var(--bg-light);
+}
+.t-btn-outline-primary:hover {
+  background: #2987d5;
+  color: var(--bg-light);
+}
+.t-btn-outline-secondary:hover {
+  background: #6cd37d;
+  color: var(--bg-light);
+}
+
+/* inputs */
+.t-input {
+  background: #f6f6f6;
+  border: 1px solid #C0CCDA;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}

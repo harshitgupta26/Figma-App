@@ -7,11 +7,12 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/dashboard.css" />
-    <link rel="stylesheet" href="../styles/container.css" />
+    <link rel="stylesheet" href="../styles/camp-new.css" />
     <script src="../vendor/jquery.min.js" defer></script>
     <script src="../scripts/dashboard.js" defer></script>
     <title>Figma</title>
@@ -19,10 +20,10 @@
   <body>
     <nav class="header">
       <img src="../images/Logo.png" alt="trustmetrics logo" class="logo" />
-      <ul>
-        <li>Dashboard</li>
-        <li>New</li>
-      </ul>
+      <div>
+        <span>Dashboard </span>
+        <span>&#8226; Container</span>
+      </div>
       <div class="actions">
         <div class="search">
           <img src="../images/search (1) 1.png" />
@@ -38,12 +39,15 @@
     <div class="main">
       <div class="dashboard">
         <div class="dash-head">
-          <div class="dash-logo">
-            <div class="dash-open">
-              <img src="../images/dashboard/Ellipse 19.png" alt="" />
-            </div>
+          <div class="dash-open">
+            <img src="../images/dashboard/Ellipse 19.png" alt="" />
           </div>
-          <p class="t-intro-bold" style="padding: 10px;">Larsen & Derick</p>
+          <p
+            class="t-intro-bold text-light m-0 dash-heading"
+            style="padding: 10px;"
+          >
+            Larsen & Derick
+          </p>
           <div class="dash-close">
             <img src="../images/dashboard/Group 476.png" alt="" />
           </div>
@@ -52,113 +56,107 @@
         <ul>
           <li class="dash-link" id="dashboard">
             <img src="../images/dashboard/dashboard 1.png" alt="" />
-            <p class="t-para-bold">Dashboard</p>
+            <a href="#" class="t-para-bold">Dashboard</a>
           </li>
           <ul class="dash-sub-links">
-            <li>Overview</li>
-            <li>New</li>
-            <li>CSAT</li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">CSAT</a></li>
           </ul>
           <li href="#" class="dash-link">
             <img src="../images/dashboard/hashtag (1) 1.png" alt="" />
-            <p class="t-para-bold">Campaigns</p>
+            <a class="t-para-bold">Campaigns</a>
           </li>
           <ul class="dash-sub-links">
-            <li>New</li>
-            <li>Manage</li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Manage</a></li>
           </ul>
           <li href="#" class="dash-link">
             <img src="../images/dashboard/Group 106.png" alt="" />
-            <p class="t-para-bold">All Feedback</p>
+            <a class="t-para-bold">All Feedback</a>
           </li>
           <ul class="dash-sub-links">
-            <li>New</li>
-            <li>Manage</li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Manage</a></li>
           </ul>
           <li href="#" class="dash-link">
             <img src="../images/dashboard/Group 107.png" alt="" />
-            <p class="t-para-bold">Send Analytics</p>
+            <a class="t-para-bold">Send Analytics</a>
           </li>
           <ul class="dash-sub-links">
-            <li>New</li>
-            <li>Manage</li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Manage</a></li>
           </ul>
-          <li href="#" class="dash-link">
+          <li class="dash-link">
             <img src="../images/dashboard/Group 35.png" alt="" />
-            <p class="t-para-bold">Widgets</p>
+            <a class="t-para-bold">Widgets</a>
           </li>
           <ul class="dash-sub-links">
-            <li>New</li>
-            <li>Manage</li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Manage</a></li>
           </ul>
-          <li href="#" class="dash-link">
+          <li class="dash-link">
             <img src="../images/dashboard/Group 108.png" alt="" />
-            <p class="t-para-bold">All Contacts</p>
+            <a class="t-para-bold">All Contacts</a>
           </li>
           <ul class="dash-sub-links">
-            <li>New</li>
-            <li>Manage</li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Manage</a></li>
           </ul>
         </ul>
-        <div class="dash-footer">
-          <a href="#" class="dash-link">
-            <img src="../images/dashboard/Group 108.png" alt="" />
-            <p class="t-para-bold">Admin</p>
-          </a>
-          <a href="#" class="dash-link">
-            <img src="../images/dashboard/Group 108.png" alt="" />
-            <p class="t-para-bold">View Public Profile</p>
-          </a>
-        </div>
+        <ul class="dash-footer">
+          <li href="#" class="dash-link t-intro-2 text-light">
+            <img src="../images/dashboard/settings 2.png" alt="" />
+            <a class="">Admin</a>
+          </li>
+          <li href="#" class="dash-link t-intro-2 text-light">
+            <img src="../images/dashboard/internet (1) 1.png" alt="" />
+            <a class="">View Public Profile</a>
+          </li>
+        </ul>
       </div>
 
-
-      <!-- <div class="container">
-          <section class="section">
-              <div class="section-img">
-                  <img src="../images/container/Group.png" alt="">
-              </div>
-              <div>
-              <p class="t-intro-text">
-                No campaigns to manage. You need to create a campaign to manage the respective campaigns. 
-              </p>
-              <button class="t-btn">Create New Capmaign</button>
-            </div>
-          </section>
-      </div> -->
-      <div class="container">
+      <div class="container-fluid p-5">
         <h2 class="t-h2">Create New Campaign</h2>
-        <section class="section border-primary">
-          <div class="section-img">
-            <img src="../images/undraw_voting_nvu7 1.png" alt="" />
+        <div class="row border-secondary mt-5 mb-5 p-4 pt-5 pb-5">
+          <div class="col-md-3">
+            <div class="section-img">
+              <img src="../images/undraw_voting_nvu7 1.png" alt="" />
+            </div>
           </div>
-          <div>
-            <h2 class="t-h2">Manual</h2>
-            <p class="t-intro-text">
+          <div class="col-md-9">
+            <h3 class="t-h3">Manual</h3>
+            <p class="t-intro">
               This allows you to upload a list of contacts and send out a
               request to respond to your CSAT survey. You can send the request
               just one-time or can configure it to send it to them on a
               recurring basis - quarterly, bi-annually or annually.
             </p>
-            <button class="t-btn t-btn-primary">CSAT One Time Campaign</button>
+            <button class="t-btn t-btn-primary mr-3">
+              CSAT One Time Campaign
+            </button>
             <button class="t-btn t-btn-secondary">NPS One Time Campaign</button>
           </div>
-        </section>
-        <section class="section border-primary">
-          <div class="section-img">
-            <img src="../images/undraw_email_campaign_qa8y 1.png" alt="" />
+        </div>
+
+        <div class="row border-primary mt-5 mb-5 p-4 pt-5 pb-5">
+          <div class="col-md-3">
+            <div class="section-img">
+              <img src="../images/undraw_email_campaign_qa8y 1.png" alt="" />
+            </div>
           </div>
-          <div>
-            <h2 class="t-h2">Automation</h2>
-            <p class="t-intro-text">
+          <div class="col-md-9">
+            <h3 class="t-h3">Automation</h3>
+            <p class="t-intro">
               This allows you to set up an automated way of sending CSAT
               requests to your contacts who engage, purchase or share their
               contact information with your company.
             </p>
-            <button class="t-btn t-btn-primary">CSAT One Time Campaign</button>
+            <button class="t-btn t-btn-primary mr-3">
+              CSAT One Time Campaign
+            </button>
             <button class="t-btn t-btn-secondary">NPS One Time Campaign</button>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   </body>

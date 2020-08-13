@@ -1,41 +1,56 @@
 .dashboard {
-    width: 343px;
-    height: 1239px;
+    width: 373px;
+    height: 1077px;
+    min-width: 373px;
     background: #005daa;
     color: #fefefe;
     border-radius: 13px;
     padding: 30px;
-    margin: 16px;
+    margin: 16px 30px;
     display: flex;
-    flex: 1;
     flex-direction: column;
+    transition: all 0.3s;
   }
   .dash-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  .dash-open {
+    background: var(--bg-light);
+    padding: 6px;
+    border-radius: 50%;
+  }
   .dash-link {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #C0CCDA;
+    margin: 2rem 0;
+    cursor: pointer;
+  }
+  .dash-link p{
+    margin: 0;
   }
   .dash-sub-links li {
     margin-left: 40px;
     padding: 20px;
     cursor: pointer;
   }
-  .dash-link p {
+  .dash-link a {
     padding: 10px
   }
   .li-active {
     color: #FFFFFF;
   }
   .sub-li-active {
-    list-style-type: disc;
     background: #2987D5;
     border-radius: 5px;
+  }
+  .sub-li-active::before {
+    content: '\2022';
+    margin-right: 10px;
+    font-size: 20px;
   }
   .dash-logo {
     
@@ -47,6 +62,25 @@
     margin-top: auto;
     border-top: 1px solid #fefefe;
   }
-  .closed {
-      
+  .dashboard li a {
+    display: inline-block;
+  }
+  .dashboard.dash-collapse {
+    width: 100px;
+    min-width: 100px;
+  }
+  .dashboard.dash-collapse .dash-open {
+    margin-left: -11px;
+  }
+  .dashboard.dash-collapse li {
+    align-self: center;
+    justify-self: center;
+  }
+  .dashboard.dash-collapse a,.dash-close,.dash-heading {
+    display: none;
+  }
+  .dashboard.dash-collapse li img {
+    margin-left: 6px;
+    margin-bottom: 15px;
+    transform: scale(1.2);
   }

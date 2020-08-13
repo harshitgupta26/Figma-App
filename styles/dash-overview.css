@@ -1,0 +1,6 @@
+  .container-fluid {
+    background: #fefefe;
+    box-shadow: 4px 4px 10px rgba(204, 208, 237, 0.15),
+      -2px -2px 10px rgba(204, 208, 237, 0.15);
+    border-radius: 12px;
+  }
