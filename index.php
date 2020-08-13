@@ -1,5 +1,5 @@
 <?php
 
-include_once("./views/index.hmtl");
+include_once("./views/index.html");
 
 ?>
