@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../styles/dashboard.css" />
     <link rel="stylesheet" href="../styles/camp-new.css" />
     <script src="../vendor/jquery.min.js" defer></script>
-    <script src="../scripts/dashboard.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
     <title>Figma</title>
   </head>
   <body>
@@ -59,7 +59,7 @@
             <a href="#" class="t-para-bold">Dashboard</a>
           </li>
           <ul class="dash-sub-links">
-            <li><a href="#">Overview</a></li>
+            <li><a href="dash-overview.html">Overview</a></li>
             <li><a href="#">CSAT</a></li>
           </ul>
           <li href="#" class="dash-link">
@@ -67,8 +67,8 @@
             <a class="t-para-bold">Campaigns</a>
           </li>
           <ul class="dash-sub-links">
-            <li><a href="#">New</a></li>
-            <li><a href="#">Manage</a></li>
+            <li><a href="camp-new.html">New</a></li>
+            <li><a href="camp-manage.html">Manage</a></li>
           </ul>
           <li href="#" class="dash-link">
             <img src="../images/dashboard/Group 106.png" alt="" />
@@ -115,49 +115,7 @@
         </ul>
       </div>
 
-      <div class="container-fluid p-5">
-        <h2 class="t-h2">Create New Campaign</h2>
-        <div class="row border-secondary mt-5 mb-5 p-4 pt-5 pb-5">
-          <div class="col-md-3">
-            <div class="section-img">
-              <img src="../images/undraw_voting_nvu7 1.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-9">
-            <h3 class="t-h3">Manual</h3>
-            <p class="t-intro">
-              This allows you to upload a list of contacts and send out a
-              request to respond to your CSAT survey. You can send the request
-              just one-time or can configure it to send it to them on a
-              recurring basis - quarterly, bi-annually or annually.
-            </p>
-            <button class="t-btn t-btn-primary mr-3">
-              CSAT One Time Campaign
-            </button>
-            <button class="t-btn t-btn-secondary">NPS One Time Campaign</button>
-          </div>
-        </div>
-
-        <div class="row border-primary mt-5 mb-5 p-4 pt-5 pb-5">
-          <div class="col-md-3">
-            <div class="section-img">
-              <img src="../images/undraw_email_campaign_qa8y 1.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-9">
-            <h3 class="t-h3">Automation</h3>
-            <p class="t-intro">
-              This allows you to set up an automated way of sending CSAT
-              requests to your contacts who engage, purchase or share their
-              contact information with your company.
-            </p>
-            <button class="t-btn t-btn-primary mr-3">
-              CSAT One Time Campaign
-            </button>
-            <button class="t-btn t-btn-secondary">NPS One Time Campaign</button>
-          </div>
-        </div>
-      </div>
+      <div id="page"></div>
     </div>
   </body>
 </html>

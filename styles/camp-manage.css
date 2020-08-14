@@ -3,7 +3,7 @@
     background: #F0F6FD;
     border-radius: 1rem;
   }
-  .container {
+  .container-fluid {
     background: #fefefe;
     box-shadow: 4px 4px 10px rgba(204, 208, 237, 0.15),
       -2px -2px 10px rgba(204, 208, 237, 0.15);
