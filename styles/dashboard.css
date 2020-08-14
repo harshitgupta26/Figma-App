@@ -74,6 +74,7 @@
 .dashboard.dash-collapse {
   width: 100px;
   min-width: 100px;
+  max-width: 100px;
 }
 .dashboard.dash-collapse .dash-open {
   margin-left: -11px;
