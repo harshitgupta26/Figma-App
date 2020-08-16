@@ -27,9 +27,26 @@
     -5px -5px 10px rgba(198, 198, 198, 0.15);
   border-radius: 20px;
   min-height: 341px;
+  min-width: 200px;
   margin: 100px;
+  cursor: pointer;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #505671;
+}
+.card-text {
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  color: #505671;
 }
 .card-footer {
-    background: var(--bg-light);
-    color: var(--bg-primary);
+  background: var(--bg-light);
+  color: var(--bg-primary);
+}
+.color-primary {
+  color: var(--bg-primary);
 }

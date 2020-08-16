@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../vendor/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/camp-new.css" />
+    <link rel="stylesheet" href="../styles/form-confirm.css" />
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-tagsinput.js"></script>
+    <!-- <script src="../scripts/form-confirm.js"></script> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid p-4 pl-5 pr-5">
+      <div class="row border-bottom">
+        <div class="col-md-6">
+          <p class="t-intro">
+            Feedback-Car-Insurance-October
+            <img src="../images/container/24/basic/pencil-create.svg" />
+          </p>
+          <p class="t-tag">
+            Give your campaign an internal name to help organize and locate it
+            easily within your account. For example: 'Feedback_October'
+          </p>
+        </div>
+        <div class="col-md-6 align-items-center d-flex">
+          <p class="ml-auto mr-4 t-intro-2">
+            <img src="../images/container/Rectangle 292.png" />NPS Manual
+            Campaign
+          </p>
+        </div>
+      </div>
+
+      <div class="row border-bottom align-items-center d-flex">
+        <div class="col-md-6 t-intro-2 non-active">
+          <span class="mr-2 d-inline-block pt-5 pb-5">Setup</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="mr-2 d-inline-block pt-5 pb-5">Design</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="mr-2 d-inline-block pt-5 pb-5">Recipients</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="active-tab mr-2 d-inline-block pt-5 pb-5">Confirmation</span>
+        </div>
+        <div class="col-md-6 align-items-center d-flex">
+          <div class="ml-auto">
+            <button class="t-btn t-btn-outline-primary mr-3">
+              Save & Exit
+            </button>
+            <button class="t-btn t-btn-primary mr-3" data-toggle="modal" data-target="#scheduleModal">Schedule</button>
+            <a href="form-confirm-send.html" class="t-btn t-btn-primary">Send</a>
+          </div>
+        </div>
+      </div>
+<!-- Middle Section -->
+      <div class="row border-bottom">
+        <div class="col-12">
+
+          <div class="row m-4 border csat-form">
+            <div class="col-12">
+
+              <div class="row border-bottom">
+                <div class="col-12 pt-5 px-5">
+                    <h2 class="t-h2">Build your Email</h2>
+                    <img
+                      class="img-fluid"
+                      src="../images/campaign/Frame.png"
+                      alt=""
+                    />
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-9 px-5 py-3">
+                  <p class="t-para-bold">Subject Line</p>
+                  <p id="title" class="t-intro">Your Opinion Matter to Company Name</p>
+                  <input id="title-input" style="display: none;" class="t-input form-control" type="text" placeholder="Your Opinion Matter to Company Name">
+                </div>
+                <div class="px-5 mt-4 ml-auto">
+                    <button id="edit-button" class="t-btn t-btn-outline-primary">Edit Title</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-9 px-5 py-3">
+                  <p class="t-para-bold">From Name</p>
+                  <p id="title" class="t-intro">Shane Thompson</p>
+                </div>
+                <div class="ml-auto px-5 mt-4">
+                    <button id="edit-button" class="t-btn t-btn-outline-primary">Edit Form</button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-9 px-5 py-3">
+                  <p class="t-para-bold">Design</p>
+                </div>
+                <div class="ml-auto px-5 mt-4">
+                    <button id="edit-button" class="t-btn t-btn-outline-primary">Edit Design</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-12 p-5">
+                  <div class="row px-5">
+                    <div class="card col-7 p-0">
+                      <h5 class="t-intro-bold email-head p-2 pl-4 m-1">
+                        <span><img class="img-fluid" src="../images/dashboard/Ellipse 19.png"></span>
+                        Larsen & Derick
+                      </h5>
+                      <div class="card-body text-center">
+                        <img class="img-fluid" src="../images/campaign/EmailFrame.png">
+                      </div>
+                      <div class="card-body px-5">
+                        <p class="t-intro-bold">Hi [F.NAME]</p>
+                        <p class="t-para">
+                          How likely are you to recommend <strong>[Company Name]</strong> to a friend or a colleague?
+                        </p>
+                        <p class="t-para-bold mt-5">Provide Feedback out of 10</p>
+                        <div class="col-12">
+                          <div class="row">
+                            <div class="col-6">
+                              <p class="t-para-bold" style="color: #757C97;">
+                                Least Likely
+                              </p>
+                            </div>
+                            <div class="col-6">
+                              <p class="t-para-bold text-right" style="color: #757C97;">
+                                Most Likely
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-1"><button class="rating-btn">0</button></div>
+                            <div class="col-1"><button class="rating-btn">1</button></div>
+                            <div class="col-1"><button class="rating-btn">2</button></div>
+                            <div class="col-1"><button class="rating-btn">3</button></div>
+                            <div class="col-1"><button class="rating-btn">4</button></div>
+                            <div class="col-1"><button class="rating-btn">5</button></div>
+                            <div class="col-1"><button class="rating-btn">6</button></div>
+                            <div class="col-1"><button class="rating-btn">7</button></div>
+                            <div class="col-1"><button class="rating-btn">8</button></div>
+                            <div class="col-1"><button class="rating-btn">9</button></div>
+                            <div class="col-1"><button class="rating-btn">10</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 d-flex flex-column align-items-center justify-content-center">
+                      <div>
+                        <button class="t-btn t-btn-primary" data-toggle="modal" data-target="#testModal">Send Test Mail</button>
+                      </div>
+                      <p class="t-para mt-3">Preview Mail
+                        <span class="border p-2"><img src="../images/campaign/desktop (1) 1.png" alt=""></span>
+                        <span class="border p-2 px-3"><img src="../images/campaign/Group 451.png" alt=""></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-9 px-5 py-3">
+                  <p class="t-para-bold">Frequency</p>
+                  <p id="title" class="t-intro">One-Time</p>
+                </div>
+                <div class="ml-auto px-5 mt-4">
+                  <button id="edit-button" class="t-btn t-btn-outline-primary">Change Frequency</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-9 px-5 py-3">
+                  <p class="t-para-bold">Recepients</p>
+                  <p id="title" class="t-intro">385 Selected</p>
+                </div>
+                <div class="ml-auto px-5 mt-4">
+                  <button id="edit-button" class="t-btn t-btn-outline-primary">Change Audience</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-9 px-5 py-3">
+                  <p class="t-para-bold">Recepients</p>
+                  <p id="title" class="t-intro">Automatically Added via Email BCC</p>
+                </div>
+                <div class="ml-auto px-5 mt-4">
+                  <button id="edit-button" class="t-btn t-btn-outline-primary">Change Audience</button>
+                </div>
+              </div>
+
+              <div class="row p-5">
+                <div class="col-12 p-0">
+                  <p class="t-para-bold">Tags</p>
+                </div>
+                <input class="t-input" data-role="tagsinput" value="One Time, Car Insurance">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row border-bottom pt-4 pb-4 align-items-center d-flex">
+        <a href="form-design-build-email.html" class="t-btn t-btn-primary-tertiary">&#8249; Back</a>
+        <a href="form-confirm-send.html" class="t-btn t-btn-outline-primary ml-auto">Next</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- Test email Modal -->
+<div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="testModalLabel" aria-hidden="true">
+  <div class="modal-dialog test-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title t-h3 px-5 py-3" id="testModalLabel">Send Test Email</h3>
+        <button type="button" class="close mt-2 mr-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5 pt-3">
+        <p class="t-para-bold mt-4">Type Emails (Seperated by commas)</p>
+        <input type="text" class="t-input form-control p-4" placeholder="Shanethompson@gmail.com">
+        <div class="col-4 mt-4 ml-auto">
+          <button type="button" class="t-btn t-btn-primary">Send Test Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Schedule Email Modal -->
+<div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+  <div class="modal-dialog schedule-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title t-h3 px-5 py-3" id="scheduleModalLabel">Schedule Email</h3>
+        <button type="button" class="close mt-2 mr-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5 pt-3">
+        <div class="form-group">
+          <label class="form-control-label t-para-bold mt-4">Date</label>
+          <input type="date" class="t-input form-control p-4 w-75" placeholder="Shanethompson@gmail.com">
+        </div>
+        <div class="form-group">
+          <label class="form-control-label t-para-bold mt-4">Time Zone</label>
+          <select class="t-input form-control p-4 w-50"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-control-label t-para-bold mt-4">Time</label>
+          <input type="time" class="t-input form-control p-4 w-30">
+        </div>
+        <div class="col-4 mt-4 ml-auto">
+          <button type="button" class="t-btn t-btn-primary">Schedule</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

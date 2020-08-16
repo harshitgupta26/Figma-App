@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/camp-new.css" />
+    <link rel="stylesheet" href="../styles/form-design-build-email.css" />
+    <link rel="stylesheet" href="../styles/form-recepient.css" />
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap-tagsinput.js"></script>
+    <script src="../scripts/form-design-build-email.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid p-4 pl-5 pr-5">
+      <div class="row border-bottom">
+        <div class="col-md-6">
+          <p class="t-intro">
+            Feedback-Car-Insurance-October
+            <img src="../images/container/24/basic/pencil-create.svg" />
+          </p>
+          <p class="t-tag">
+            Give your campaign an internal name to help organize and locate it
+            easily within your account. For example: 'Feedback_October'
+          </p>
+        </div>
+        <div class="col-md-6 align-items-center d-flex">
+          <p class="ml-auto mr-4 t-intro-2">
+            <img src="../images/container/Rectangle 292.png" />NPS Manual
+            Campaign
+          </p>
+        </div>
+      </div>
+
+      <div class="row border-bottom align-items-center d-flex">
+        <div class="col-md-6 t-intro-2 non-active">
+          <span class="mr-2 d-inline-block pt-5 pb-5">Setup</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="mr-2 d-inline-block pt-5 pb-5">Design</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="active-tab mr-2 d-inline-block pt-5 pb-5"
+            >Recipients</span
+          >
+          <span class="mr-2">&#x276F;</span>
+          <span class="mr-2 d-inline-block pt-5 pb-5">Confirmation</span>
+        </div>
+        <div class="col-md-6 align-items-center d-flex">
+          <div class="ml-auto">
+            <button class="t-btn t-btn-primary mr-3">Test</button>
+            <span class="position-relative">
+              <button class="t-btn t-btn-outline-primary mr-3 preview-button">
+                Email Preview
+              </button>
+              <ul class="position-absolute preview-menu" style="display: none;">
+                <li
+                  class="border-bottom"
+                  data-toggle="modal"
+                  data-target="#desktopModal"
+                >
+                  <img src="../images/campaign/desktop (1) 1.png" />
+                  <span class="pl-2">Desktop</span>
+                </li>
+                <li>
+                  <img src="../images/campaign/Group 451.png" />
+                  <span class="pl-2">Mobile</span>
+                </li>
+              </ul>
+            </span>
+            <button class="t-btn t-btn-outline-primary mr-3">
+              Save & Exit
+            </button>
+            <a href="form-confirm.html" class="t-btn t-btn-primary">Next</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recepients -->
+      <div class="row border-bottom">
+        <div class="col-12">
+          <div class="row m-4 border csat-form">
+            <div class="col-12">
+              <div class="row border-bottom">
+                <div class="col-12 px-5 py-3">
+                  <h2 class="t-h2">Add Recepients</h2>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-12 p-5">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label
+                          for="contacts"
+                          class="form-control-label t-para-bold color-para"
+                        >
+                          Select Contacts From an Existing List
+                        </label>
+                        <select
+                          type="text"
+                          class="t-input w-100"
+                          placeholder="Choose A Recepient List"
+                        ></select>
+                      </div>
+                    </div>
+                    <p class="t-intro color-intro mt-md-4 p-2">or</p>
+                    <div class="col-4">
+                      <span
+                        class="t-para t-color-primary d-inline-block border p-3 browse-button mt-4"
+                        >+ Browse</span
+                      >
+                    </div>
+                    <div class="col-6 mt-md-3">
+                      <div class="form-group">
+                        <label
+                          for="contacts"
+                          class="form-control-label t-para-bold color-para"
+                        >
+                          Select Tags
+                        </label>
+                        <select
+                          class="t-input w-100"
+                          data-role="tagsinput"
+                          multiple
+                        >
+                          <option value="Car Insurance">Car Insurance</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row p-5 mt-3">
+                <div class="col-12 table-container p-0 border">
+                  <div class="d-flex justify-content-end p-3">
+                    <div class="search">
+                      <img src="../images/search (1) 1.png" />
+                      <input
+                        type="text"
+                        class="t-input"
+                        placeholder="Search Campaign"
+                      />
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <caption class="table-foot">
+                        <div class="d-flex justify-content-end p-4"></div>
+                      </caption>
+                      <thead class="table-head">
+                        <th class="p-4">Email</th>
+                        <th class="p-4">Contact Name</th>
+                        <th class="p-4">List</th>
+                        <th class="p-4">Tags</th>
+                        <th class="p-4">Phone</th>
+                        <th class="p-4">Order</th>
+                        <th class="p-4">Created</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                        <tr>
+                          <td>gia@tom.com</td>
+                          <td>Giacomo Guilizzoni</td>
+                          <td>xxxx-2020-02-10\rE-</td>
+                          <td>
+                            <span class="badge badge-success"
+                              >Car Insurance</span
+                            >
+                          </td>
+                          <td>956000221</td>
+                          <td>#23</td>
+                          <td>2020-02-09</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom pt-4 pb-4 d-flex">
+        <a
+          href="form-design-build-email.html"
+          class="t-btn t-btn-primary-tertiary"
+          >&#8249; Back</a
+        >
+        <a href="form-confirm.html" class="t-btn t-btn-outline-primary ml-auto"
+          >Next</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/camp-new.css" />
+    <link rel="stylesheet" href="../styles/form-confirm.css" />
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
+    <script src="../scripts/form-design-build-email.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid p-4 pl-5 pr-5">
+      <div class="row border-bottom">
+        <div class="col-md-6">
+          <p class="t-intro">
+            Feedback-Car-Insurance-October
+            <img src="../images/container/24/basic/pencil-create.svg" />
+          </p>
+          <p class="t-tag">
+            Give your campaign an internal name to help organize and locate it
+            easily within your account. For example: 'Feedback_October'
+          </p>
+        </div>
+        <div class="col-md-6 align-items-center d-flex">
+          <p class="ml-auto mr-4 t-intro-2">
+            <img src="../images/container/Rectangle 292.png" />NPS Manual
+            Campaign
+          </p>
+        </div>
+      </div>
+
+      <div class="row border-bottom align-items-center d-flex">
+        <div class="col-6 t-intro-2 non-active">
+          <span class="mr-2 d-inline-block pt-5 pb-5">Setup</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="mr-2 d-inline-block pt-5 pb-5">Design</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="mr-2 d-inline-block pt-5 pb-5">Recipients</span>
+          <span class="mr-2">&#x276F;</span>
+          <span class="active-tab mr-2 d-inline-block pt-5 pb-5">Confirmation</span>
+        </div>
+        <div class="col-6 align-items-center d-flex">
+          <div class="ml-auto">
+            <button class="t-btn t-btn-outline-primary mr-3">
+              Save & Exit
+            </button>
+          </div>
+        </div>
+      </div>
+
+<!-- Middle Section -->
+      <div class="row">
+        <div class="col-12">
+
+          <div class="row m-4 border csat-form">
+            <div class="col-12 p-5">
+                <h2 class="t-h2">
+                    When would you like to send this campaign?
+                </h2>
+                <p class="t-intro mt-2">
+                    You can schedule it now or a time in the future
+                </p>
+                <div class="row">
+                    <div class="col-5 border p-5 m-4">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="../images/campaign/undraw_envelope_n8lc 1.png" alt="">
+                            </div>
+                            <div class="col-7">
+                                <p class="t-intro">
+                                    Immediately send your campaign
+                                </p>
+                                <div class="mt-5">
+                                  <a href="form-sent.html" class="t-btn t-btn-secondary">Send Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 border p-5 m-4 ml-auto">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="../images/campaign/Group 155.png" alt="">
+                            </div>
+                            <div class="col-7">
+                                <p class="t-intro">
+                                    Set up your schedule to send your campaign at a later time
+                                </p>
+                                <button class="t-btn t-btn-primary"  data-toggle="modal" data-target="#scheduleModal">Schedule</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row border-bottom pt-4 pb-4 align-items-center d-flex">
+        <a href="form-design.html" class="t-btn t-btn-primary-tertiary">&#8249; Back</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Schedule Email Modal -->
+<div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+  <div class="modal-dialog schedule-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title t-h3 px-5 py-3" id="scheduleModalLabel">Schedule Email</h3>
+        <button type="button" class="close mt-2 mr-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5 pt-3">
+        <div class="form-group">
+          <label class="form-control-label t-para-bold mt-4">Date</label>
+          <input type="date" class="t-input form-control p-4 w-75" placeholder="Shanethompson@gmail.com">
+        </div>
+        <div class="form-group">
+          <label class="form-control-label t-para-bold mt-4">Time Zone</label>
+          <select class="t-input form-control p-4 w-50"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-control-label t-para-bold mt-4">Time</label>
+          <input type="time" class="t-input form-control p-4 w-30">
+        </div>
+        <div class="col-4 mt-4 ml-auto mt-4">
+          <a href="form-send-schedule.html" class="t-btn t-btn-primary">Schedule</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

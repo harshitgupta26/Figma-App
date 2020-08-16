@@ -7,12 +7,13 @@
 }
 .csat-form {
   border-radius: 12px;
+  border: 1px solid #757C97;
 }
 .email-head {
   background: #e7f0fb;
 }
 .preview-menu {
-    left: 0;
+  left: 0;
   background: var(--bg-light);
   box-shadow: 10px 10px 15px rgba(198, 198, 198, 0.2),
     -5px -5px 10px rgba(198, 198, 198, 0.15);
@@ -20,21 +21,13 @@
   z-index: 2;
 }
 .preview-menu li {
-    cursor: pointer;
-    padding: 20px 40px 20px 20px;
+  cursor: pointer;
+  padding: 20px 40px 20px 20px;
 }
 .preview-menu li:hover {
-    background: #e7f0fb;
+  background: #e7f0fb;
 }
 
-.image-container {
-  position: relative;
-}
-.image-options {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
 .rating-btn {
   padding: 1rem 1.5rem;
   background: #51aaf3;
@@ -55,12 +48,30 @@
   line-height: 33px;
   color: #fefefe;
 }
-
-.modal-dialog {
-    max-width: 1300px;
-    min-width: 1300px;
+.test-modal {
+  max-width: 800px;
+  min-width: 800px;
+}
+.schedule-modal {
+  max-width: 600px;
+  min-width: 600px;
+}
+.schedule-modal input[type="time"] {
+  width: 35%;
 }
 .modal-content {
-    border-radius: 50px
+  border-radius: 50px;
 }
-.desktopClose {}
+
+.email-head {
+  background: #e6ebf0;
+}
+.rating-btn {
+  padding: 0.8rem 1.1rem;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+.sent-box {
+  padding: 150px 0;
+}

@@ -1,0 +1,11 @@
+.color-para {
+  color: #757c97;
+}
+.color-intro {
+  color: #c0ccda;
+}
+.browse-button {
+  cursor: pointer;
+  
+  border-radius: 12px;
+}

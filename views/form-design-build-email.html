@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/camp-new.css" />
     <link rel="stylesheet" href="../styles/form-design-build-email.css" />
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
+    <script src="../scripts/form-design-build-email.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -42,43 +46,217 @@
         <div class="col-md-6 align-items-center d-flex">
           <div class="ml-auto">
             <button class="t-btn t-btn-primary mr-3">Test</button>
-            <button class="t-btn t-btn-outline-primary mr-3">
-              Email Preview
-            </button>
+            <span class="position-relative">
+              <button class="t-btn t-btn-outline-primary mr-3 preview-button">
+                Email Preview
+              </button>
+              <ul class="position-absolute preview-menu" style="display: none">
+                <li class="border-bottom" data-toggle="modal" data-target="#desktopModal">
+                    <img src="../images/campaign/desktop (1) 1.png">
+                    <span class="pl-2">Desktop</span>
+                </li>
+                <li>
+                    <img src="../images/campaign/Group 451.png">
+                    <span class="pl-2">Mobile</span>
+                </li>
+              </ul>
+            </span>
             <button class="t-btn t-btn-outline-primary mr-3">
               Save & Exit
             </button>
-            <button class="t-btn t-btn-primary">Next</button>
+            <a href="form-recepient.html" class="t-btn t-btn-primary">Next</a>
           </div>
         </div>
       </div>
-
+<!-- Build Email -->
       <div class="row border-bottom">
         <div class="col-12">
-          <div class="border csat-form m-4 mx-5 border-bottom">
-            <div class="pt-5 px-5">
-                <h2 class="t-h2">Build your Email</h2>
-                <img class="img-fluid" src="../images/campaign/Frame.png" alt="" />
-            </div>
-            <hr />
-            <div class="row col-12 py-2 px-5">
-                <div class="col-md-10">
-                    <p class="t-para-bold">Title</p>
-                    <input type="text" class="t-input w-100" placeholder="Your Opinion Matter to Company Name">
+
+          <div class="row m-4 border csat-form">
+            <div class="col-12">
+
+              <div class="row border-bottom">
+                <div class="col-12 pt-5 px-5">
+                    <h2 class="t-h2">Build your Email</h2>
+                    <img
+                      class="img-fluid"
+                      src="../images/campaign/Frame.png"
+                      alt=""
+                    />
                 </div>
-                <div class="col-md-2">
-                        <button class="t-btn t-btn-outline-primary">Update</button>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-md-10 px-5 py-3">
+                  <p class="t-para-bold">Title</p>
+                  <p id="title" class="t-intro">Your Opinion Matter to Company Name</p>
+                  <input id="title-input" style="display: none;" class="t-input form-control" type="text" placeholder="Your Opinion Matter to Company Name">
                 </div>
+                <div class="col-md-2 px-5 mt-4">
+                  <button id="edit-button" class="t-btn t-btn-outline-primary">Edit Title</button>
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                <div class="col-12 p-5">
+                  <p class="t-para-bold">Email</p>
+                  <div class="row px-3">
+                    <div class="card col-12 p-0">
+                      <h5 class="t-intro-bold email-head p-4 pl-5 m-1">
+                        <span><img class="img-fluid" src="../images/dashboard/Ellipse 19.png"></span>
+                        Larsen & Derick
+                      </h5>
+                      <div class="card-body text-center image-container">
+                        <img class="img-fluid" src="../images/campaign/EmailFrame.png">
+                        <div class="image-options">
+                              <p id="change-image" class="t-tag color-primary mb-1"><img src="../images/campaign/camera-create.png" alt="">Change Image</p>
+                              <p style="font-size: 12px; line-height: 14px; color: #757C97;">(Max Width 600px)</p>
+                              <p id="remove-image" class="t-tag" style="color: #EB5757;"><img src="../images/campaign/circle-x.png" alt="">Remove Image</p>
+                        </div>
+                      </div>
+                      <div class="card-body px-5">
+                        <p class="t-intro-bold">Hi [F.NAME]</p>
+                        <p class="t-para">
+                          How likely are you to recommend <strong>[Company Name]</strong> to a friend or a colleague?
+                        </p>
+                        <p class="t-para-bold mt-5">Provide Feedback out of 10</p>
+                        <div class="col-lg-11">
+                          <div class="row">
+                            <div class="col-6">
+                              <p class="t-para-bold" style="color: #757C97;">
+                                Least Likely
+                              </p>
+                            </div>
+                            <div class="col-5">
+                              <p class="t-para-bold text-right" style="color: #757C97;">
+                                Most Likely
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-1"><button class="rating-btn">0</button></div>
+                            <div class="col-1"><button class="rating-btn">1</button></div>
+                            <div class="col-1"><button class="rating-btn">2</button></div>
+                            <div class="col-1"><button class="rating-btn">3</button></div>
+                            <div class="col-1"><button class="rating-btn">4</button></div>
+                            <div class="col-1"><button class="rating-btn">5</button></div>
+                            <div class="col-1"><button class="rating-btn">6</button></div>
+                            <div class="col-1"><button class="rating-btn">7</button></div>
+                            <div class="col-1"><button class="rating-btn">8</button></div>
+                            <div class="col-1"><button class="rating-btn">9</button></div>
+                            <div class="col-1"><button class="rating-btn">10</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- Last Row -->
+              <div class="row p-5">
+                <p class="t-para-bold">Response Options</p>
+                <div class="col-lg-11">
+                  <button class="response-btn">0</button>
+                  <button class="response-btn">1</button>
+                  <button class="response-btn">2</button>
+                  <button class="response-btn">3</button>
+                  <button class="response-btn">4</button>
+                  <button class="response-btn">5</button>
+                  <button class="response-btn">6</button>
+                  <button class="response-btn">7</button>
+                  <button class="response-btn">8</button>
+                  <button class="response-btn">9</button>
+                  <button class="response-btn">10</button>
+                </div>
+              </div>
+
             </div>
-            <hr>
           </div>
+
         </div>
       </div>
 
       <div class="row border-bottom pt-4 pb-4 align-items-center d-flex">
-        <div class="t-btn t-btn-primary-tertiary">&#8249; Back</div>
-        <div class="t-btn t-btn-outline-primary ml-auto">Next</div>
+        <a href="form-design.html" class="t-btn t-btn-primary-tertiary">&#8249; Back</a>
+        <a href="form-recepient.html" class="t-btn t-btn-outline-primary ml-auto">Next</a>
       </div>
     </div>
   </body>
 </html>
+
+
+
+<!-- Desktop Modal -->
+<div class="modal fade" id="desktopModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title t-h3 font-weight-bolder p-3" id="desktopModalLabel">Email Preview</h5>
+        <button type="button" class="close mt-2 desktopClose" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+            <div class="row">
+              <div class="col-12 p-5">
+                <div class="row px-3">
+                  <div class="card col-12 p-0">
+                    <div class="row d-flex align-items-center email-head p-4 pl-5 m-1">
+                      <span><img class="img-fluid" src="../images/dashboard/Ellipse 19.png"></span>
+                      <span class="t-intro-bold">Larsen & Derick</span>
+                      <div class="d-inline-block ml-auto">
+                        <span>
+                          <img src="../images/campaign/Mask Group.png">
+                          <span class="t-para-bold">4.9/5</span>
+                          <span class="t-para">(820 Reviews) </span>
+                        </span>
+                        <span>
+                           <img src="../images/campaign/brands-and-logotypes 2.png">
+                          <span class="t-para-bold">4.9/5</span>
+                          <span class="t-para">(820 Reviews)</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <img class="img-fluid" src="../images/campaign/EmailFrame.png">
+                    </div>
+                    <div class="card-body px-5">
+                      <p class="t-intro-bold">Hi [F.NAME]</p>
+                      <p class="t-para">
+                        How likely are you to recommend <strong>[Company Name]</strong> to a friend or a colleague?
+                      </p>
+                      <p class="t-para-bold mt-5">Provide Feedback out of 10</p>
+                      <div class="col-lg-11">
+                        <div class="row">
+                          <div class="col-6">
+                            <p class="t-para-bold" style="color: #757C97;">
+                              Least Likely
+                            </p>
+                          </div>
+                          <div class="col-5">
+                            <p class="t-para-bold text-right" style="color: #757C97;">
+                              Most Likely
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1"><button class="rating-btn">0</button></div>
+                          <div class="col-1"><button class="rating-btn">1</button></div>
+                          <div class="col-1"><button class="rating-btn">2</button></div>
+                          <div class="col-1"><button class="rating-btn">3</button></div>
+                          <div class="col-1"><button class="rating-btn">4</button></div>
+                          <div class="col-1"><button class="rating-btn">5</button></div>
+                          <div class="col-1"><button class="rating-btn">6</button></div>
+                          <div class="col-1"><button class="rating-btn">7</button></div>
+                          <div class="col-1"><button class="rating-btn">8</button></div>
+                          <div class="col-1"><button class="rating-btn">9</button></div>
+                          <div class="col-1"><button class="rating-btn">10</button></div>
+                        </div>
+                      </div>
+                    </div>
+          
+      </div>
+    </div>
+  </div>
+</div>

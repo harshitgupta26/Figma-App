@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../vendor/bootstrap-tagsinput.css" />
     <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/camp-new-NPS.css" />
+    <link rel="stylesheet" href="../styles/camp-new.css" />
+    <link rel="stylesheet" href="../"> 
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/bootstrap-tagsinput.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -136,10 +141,10 @@
                       class="form-check-input"
                       type="radio"
                       name="gridRadios"
-                      id="gridRadios3"
+                      id="gridRadios4"
                       value="option3"
                     />
-                    <label class="form-check-label" for="gridRadios3">
+                    <label class="form-check-label" for="gridRadios4">
                       Recurring: Every Year
                     </label>
                   </div>
@@ -147,11 +152,12 @@
               </div>
             </fieldset>
 
-            <div class="form-group row  mt-5">
+            <div class="form-group row mt-5">
               <label for="inputEmail3" class="col-sm-1 col-form-label t-para-bold">Tags</label>
-              <div class="col-sm-11">
-                <input type="email" class="form-control t-input" id="inputEmail3" placeholder="Tags">
+              <div class="col-sm-10">
+                <input type="text" value="One Time, Car Insurance"  data-role="tagsinput">
               </div>
+              <span class="t-para-bold mt-2 ">+ Add</span>
             </div>
 
           </form>
