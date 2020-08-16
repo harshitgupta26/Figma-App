@@ -6,6 +6,10 @@
 }
 .browse-button {
   cursor: pointer;
-  
   border-radius: 12px;
 }
+input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+}
+
