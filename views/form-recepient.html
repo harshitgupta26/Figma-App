@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-6 align-items-center d-flex">
           <div class="ml-auto">
-            <button class="t-btn t-btn-primary mr-3">Test</button>
+            <button class="t-btn t-btn-primary mr-3" data-toggle="modal" data-target="#testModal">Test</button>
             <span class="position-relative">
               <button class="t-btn t-btn-outline-primary mr-3 preview-button">
                 Email Preview
@@ -107,10 +107,12 @@
                         ></select>
                       </div>
                     </div>
-                    <p class="t-intro color-intro mt-md-4 p-2">or</p>
+                    <label class="t-intro color-intro ml-4 mr-4 mt-4 p-2">or</label>
                     <div class="col-4">
+                      <label class="t-para-bold color-para w-100">Upload a New List of Contacts</label>
                       <span
-                        class="t-para t-color-primary d-inline-block border p-3 browse-button mt-4"
+                        class="t-para t-color-primary d-inline-block border p-3 browse-button"
+                        data-toggle="modal" data-target="#browseModal"
                         >+ Browse</span
                       >
                     </div>
@@ -179,7 +181,7 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><input type="checkbox">gia@tom.com</td>
+                          <td>gia@tom.com</td>
                           <td>Giacomo Guilizzoni</td>
                           <td>xxxx-2020-02-10\rE-</td>
                           <td>
@@ -305,3 +307,49 @@
     </div>
   </body>
 </html>
+
+<!-- Test email Modal -->
+<div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="testModalLabel" aria-hidden="true">
+  <div class="modal-dialog test-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title t-h3 px-5 py-3" id="testModalLabel">Send Test Email</h3>
+        <button type="button" class="close mt-2 mr-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5 pt-3">
+        <p class="t-para-bold mt-4">Type Emails (Seperated by commas)</p>
+        <input type="text" class="t-input form-control p-4" placeholder="Shanethompson@gmail.com">
+        <div class="col-4 mt-4 ml-auto">
+          <button type="button" class="t-btn t-btn-primary">Send Test Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Browse Modal -->
+<div class="modal fade" id="browseModal" tabindex="-1" role="dialog" aria-labelledby="browseModalLabel" aria-hidden="true">
+  <div class="modal-dialog browse-modal" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 5.5rem">
+        <h1 class="t-h1 mb-5">New List Upload</h1>
+        <p class="t-intro browse-text text-center p-5">Drag Files Here or <a href="#" class="t-color-primary">Browse</a></p>
+        <p class="t-para-bold color-para">CSV file should have FirstName, LastName, Email, 
+          Tags (optional), Order ID (Optional), Phone (optional)</p>
+          <div class="row mt-4">
+            <div class="col-6">
+              <a href="#" class="t-color-primary">Download sample here</a>
+            </div>
+            <div class="col-6 d-flex">
+              <div class="ml-auto">
+                <button class="t-btn t-btn-primary">Upload</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
